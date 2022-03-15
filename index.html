@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
     integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
-  <title>HF-RealtimeEVC</title>
+  <title>ZXY-GAMI_EVC</title>
 </head>
 <style type="text/css">
   table {
@@ -50,8 +50,8 @@
         <div class="row align-items-center">
           <div class="col-md-12">
  
-            <h1><a class="text-light">Decoupling Speaker-Independent Emotions for Voice Conversion Via Source-Filter Networks</h1><br> 
-             <font size=5><span style="color:#000000"> Authors: Zhaojie Luo, Shoufeng Lin, Rui Liu, Jun Baba, Yuichiro Yoshikawa, Ishiguro Hiroshi </font>  </a>   
+            <h1><a class="text-light">One-shot Emotional Voice Conversion Based On Feature Separation</h1><br> 
+             <font size=5><span style="color:#000000"> Authors: Wenhuan Lu, Xinyue Zhao, Na Guo, Yongwei Li, Jianguo Wei, Jianhua Tao, Jianwu Dang </font>  </a>   
             <p>
               <div class="row">
               </div>
@@ -67,7 +67,7 @@
       <div class="row" id="result">
         <div class="col-md-12">
         	<h5>Abstract:</h5> 
-        	Emotional voice conversion (VC) aims to convert a neutral voice to an emotional (e.g. happy) one while retaining the linguistic information and speaker identity. We note that the decoupling of emotional features from other speech information (such as speaker, content, etc.) is the key to achieving remarkable performance. Some recent attempts about speech representation decoupling on the neutral speech can not work well on the emotional speech, due to the more complex acoustic properties involved in the latter. To address this problem, here we propose a novel Source-Filter-based Emotional VC model (SFEVC) to achieve proper filtering of speaker-independent emotion features from both the timbre and pitch features. Our SFEVC model consists of multi-channel encoders, emotion separate encoders, and one decoder. Note that all encoder modules adopt a designed information bottlenecks auto-encoder. Additionally, to further improve the conversion quality for various emotions, a novel two-stage training strategy based on the 2D Valence-Arousal (VA) space was proposed. Experimental results show that the proposed SFEVC along with a two-stage training strategy outperforms all baselines and achieves the state-of-the-art performance in speaker-independent emotional VC with nonparallel data. 
+        	 The task of emotional voice conversion (EVC) is to convert speech from one emotional state into another, while keeping linguistic content, speaker identity and other emotion-independent information unchanged. Due to the previous studies limited to a set of specified emotions, it is challenging to realize the conversion of emotions never seen in training stage. In this paper, we propose a one-shot emotional voice conversion model based on feature separation. The proposed method could control emotional characteristics with Global Emotion Embeddings (GEEs), and introduce activation guidance (AG) and mutual information (MI) minimization to reduce the correlations between emotion embedding and emotion-independent representation. At run-time conversion, it can produce the desired emotion speech from a single pairwise utterance without any emotion labels, whether the target emotion appears in the training set or not. The subjective and objective evaluations validate the effectiveness of our proposed model, even it could achieve unseen emotion conversion.
 		<br>
 <br>
 <br>
@@ -171,16 +171,6 @@
              <hr/>
             <br/>
             <br/>    
-          <h5>References</h5>
-	  </br>  
-          [1] Zhaojie Luo, Tetsuya Takiguchi, and Yasuo Ariki, “Emotional voice conversion using deep neural networks with mcc and f0 features,” in 2016 IEEE/ACIS 15th International Conference on Computer and Information Science (ICIS). IEEE, 2016, pp. 1–5.
-          <br/>
-          [2] Zhaojie Luo, Jinhui Chen, Tetsuya Takiguchi, and Yasuo Ariki, “Emotional voice conversion using dual supervised adversarial networks with continuous wavelet transform f0 features,” IEEE/ACM Transactions on Audio, Speech, and Language Processing, vol. 27, no. 10, pp. 1535–1548, 2019.
-          <br/>
-          [3] K. Zhou, B. Sisman, and H. Li, “Transforming spectrum and prosody for emotional voice conversion with non-parallel training data,” arXiv preprint arXiv:2002.00198, 2020. 
-          <br/>           
-          [4] K. Qian, Y. Zhang, S. Chang, M. Hasegawa-Johnson, and D. Cox, “Unsupervised speech decomposition via triple information bottleneck,” in International Conference on Machine Learning. PMLR, 2020, pp. 7836–7846.
-          <br>
            
            </div>
           </div>
